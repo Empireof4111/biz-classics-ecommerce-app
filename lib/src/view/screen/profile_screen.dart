@@ -1,9 +1,12 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:e_commerce_flutter/core/app_color.dart';
+import 'package:e_commerce_flutter/src/view/screen/account_setting.dart';
 import 'package:e_commerce_flutter/src/view/screen/login_screen.dart';
 import 'package:e_commerce_flutter/src/view/screen/my_account_screen.dart';
+import 'package:e_commerce_flutter/src/view/screen/my_address-Screen.dart';
 import 'package:e_commerce_flutter/src/view/screen/my_orders_screen.dart';
+import 'package:e_commerce_flutter/src/view/screen/wishlist_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -69,7 +72,7 @@ class ProfileScreen extends StatelessWidget {
                       size: 20,
                       color: Colors.black,
                     ),
-                    tileColor: AppColor.lightOrange,
+                    tileColor: AppColor.lightOrange.withOpacity(0.1),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     )),
@@ -93,13 +96,15 @@ class ProfileScreen extends StatelessWidget {
                       size: 20,
                       color: Colors.black,
                     ),
-                    tileColor: AppColor.lightOrange,
+                    tileColor: AppColor.lightOrange.withOpacity(0.1),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     )),
                 const SizedBox(height: 5),
                 ListTile(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, MyAdressScreen.routeName);
+                    },
                     leading: SvgPicture.asset(
                       "assets/icons/Shop Icon.svg",
                       height: 22,
@@ -115,13 +120,15 @@ class ProfileScreen extends StatelessWidget {
                       size: 20,
                       color: Colors.black,
                     ),
-                    tileColor: AppColor.lightOrange,
+                    tileColor: AppColor.lightOrange.withOpacity(0.1),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     )),
                 const SizedBox(height: 5),
                 ListTile(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, WishlistScreen.routeName);
+                    },
                     leading: SvgPicture.asset(
                       "assets/icons/Heart Icon.svg",
                       height: 22,
@@ -137,13 +144,16 @@ class ProfileScreen extends StatelessWidget {
                       size: 20,
                       color: Colors.black,
                     ),
-                    tileColor: AppColor.lightOrange,
+                    tileColor: AppColor.lightOrange.withOpacity(0.1),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     )),
                 const SizedBox(height: 5),
                 ListTile(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(
+                          context, AccountSettingScreen.routeName);
+                    },
                     leading: SvgPicture.asset(
                       "assets/icons/Settings.svg",
                       height: 22,
@@ -159,7 +169,7 @@ class ProfileScreen extends StatelessWidget {
                       size: 20,
                       color: Colors.black,
                     ),
-                    tileColor: AppColor.lightOrange,
+                    tileColor: AppColor.lightOrange.withOpacity(0.1),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     )),
@@ -184,7 +194,7 @@ class ProfileScreen extends StatelessWidget {
                       size: 20,
                       color: Colors.black,
                     ),
-                    tileColor: AppColor.lightOrange,
+                    tileColor: AppColor.lightOrange.withOpacity(0.1),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     )),

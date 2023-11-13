@@ -53,7 +53,7 @@ class _MyAccountScreenState extends State<MyAccountScreen> {
                   size: 20,
                   color: Colors.black,
                 ),
-                tileColor: AppColor.lightOrange,
+                tileColor: AppColor.lightOrange.withOpacity(0.1),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
                 )),
@@ -75,7 +75,7 @@ class _MyAccountScreenState extends State<MyAccountScreen> {
                   size: 20,
                   color: Colors.black,
                 ),
-                tileColor: AppColor.lightOrange,
+                tileColor: AppColor.lightOrange.withOpacity(0.1),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
                 )),
